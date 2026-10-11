@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <a class="back-link" href="{{ url_for('index') }}" onclick="if (history.length > 1) { history.back(); return false; }">&larr; Back</a>
+        <a class="back-link" href="{{ url_for('index') }}">&larr; Back</a>
         <p class="eyebrow">Project tools</p>
         <h1>Choose a tool</h1>
         <p class="intro">Pick what you would like to try.</p>
@@ -17,6 +17,14 @@
             <a class="tool-choice" href="{{ url_for('uppercase') }}">
                 <strong>Uppercase text</strong>
                 <span>Convert a word or sentence to uppercase.</span>
+            </a>
+            <a class="tool-choice" href="{{ url_for('expression_converter') }}">
+                <strong>Infix and postfix converter</strong>
+                <span>Convert expressions in either direction.</span>
+            </a>
+            <a class="tool-choice" href="{{ url_for('linked_list') }}">
+                <strong>Linked list</strong>
+                <span>Build and visualize a simple linked list.</span>
             </a>
             <a class="tool-choice" href="{{ url_for('acircle') }}">
                 <strong>Area of a circle</strong>
